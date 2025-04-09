@@ -297,6 +297,82 @@ body {
     width: 100%;
 }
 
+/*linklist*/
+
+.home-content ul a {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    color: #00abf0;
+}
+
+.home-content ul a::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 115%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.home-content ul a:hover {
+    color: #ededed;
+    transition: .3s;
+}
+
+.home-imgHover2 {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+    animation: manipActiveHover .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+}
+
+.home-imgHover2:hover {
+    background: #081b29;
+    opacity: .8;
+}
+
+.home-imgHover2::after { 
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 125%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+    z-index: 100;
+}
+
+.home-content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h2::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+
 
 /* KEYFRAMES ANIMATION */
 @keyframes showRight {
