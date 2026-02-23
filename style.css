@@ -211,7 +211,7 @@ body {
     justify-content: space-between;
     position: absolute;
     bottom: 40px;
-    width: 170px;
+    width: 100px;
 }
 
 .home-imgHover {
@@ -372,8 +372,97 @@ body {
     animation-delay: 1s;
 }
 
+.git {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    color: #00abf0;
+    text-decoration: none;
+}
+
+.git:hover {
+    color: #ededed;
+    transition: .3s;
+}
+
+.git::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 115%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.skills {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    list-style-position: inside; 
+    padding-left: 0;
+}
+
+.skills::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+
 /* contacts */
 
+.contact-list {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.contact-list::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+.contact-list a::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+.contact-list a {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    color: #00abf0;
+}
+
+.contact-list a:hover {
+    color: #ededed;
+    transition: .3s;
+}
+
+/**/
 .home-content2 {
     max-width: 600px;
 }
@@ -385,6 +474,9 @@ body {
     color: #00abf0;
     text-decoration: none;
 }
+
+
+
 /*
 .home-content2 ul::before { 
     content: '';
