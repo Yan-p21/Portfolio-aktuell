@@ -462,6 +462,12 @@ body {
     transition: .3s;
 }
 
+
+.contact-list h4 {
+    margin: 25px 0 8px 0;
+}
+
+
 /**/
 .home-content2 {
     max-width: 600px;
