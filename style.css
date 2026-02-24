@@ -297,7 +297,7 @@ body {
     width: 100%;
 }
 
-/*linklist*/
+/*about.html*/
 
 .home-content ul a {
     position: relative;
@@ -481,62 +481,10 @@ body {
     text-decoration: none;
 }
 
-
-
-/*
-.home-content2 ul::before { 
-    content: '';
-    position: absolute;
-    top: 20;
-    right: 30px;
-    width: 115%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.3s;
-}
-
-.home-content2 ul a::before { 
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 115%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.3s;
-}
-*/
 .home-content2 ul a:hover {
     color: #ededed;
     transition: .3s;
 }
-
-/*
-.home-content2 h2 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.home-content2 h2::before { 
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1s;
-}
-*/
-/*fini*/
-
-/* test */
-
-
 
 .home-content2 {
     position: relative; /* Nécessaire pour positionner le span */
@@ -556,33 +504,6 @@ body {
     
 }
 
-/*
-.home-content2 {
-    content: '';
-    position: absolute;
-    top: 20;
-    right: 30px;
-    width: 115%;
-    height: 100%;
-    background: yellowgreen;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.3s;
-}
-
-
-.home-content2 h2::before { 
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1s;
-}
-*/
-
 
 /* KEYFRAMES ANIMATION */
 @keyframes showRight {
@@ -596,3 +517,46 @@ body {
         pointer-events: auto;
     }
 }
+
+
+/*mobile version */
+
+/*index.html*/
+@media (max-width: 768px) {
+
+    body, .home-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .btn-box a {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+
+    .home-sci {
+        margin-top: 20px;
+    }
+
+    section {
+        margin-bottom: 40px;
+    }
+}
+/**/
