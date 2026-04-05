@@ -518,45 +518,102 @@ body {
     }
 }
 
+/* MOBILE VERSION */
+@media screen and (max-width: 768px) {
 
-/*mobile version */
-
-/*index.html*/
-@media (max-width: 768px) {
-
-    body, .home-content {
-        padding: 20px;
-        text-align: center;
+    /* Empêche le contenu de passer sous le header */
+    body {
+        padding-top: 90px; /* hauteur du header */
+        font-size: 14px;
     }
 
-    h1 {
-        font-size: 1.8rem;
-        line-height: 2.2rem;
+    /* Header fixe et lisible */
+    .header {
+        padding: 15px 5%;
+        background: #081b29; /* fond opaque pour lisibilité */
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    h3 {
-        font-size: 1.3rem;
+    .logo {
+        font-size: 22px;
     }
 
-    p {
-        font-size: 1rem;
-        line-height: 1.5rem;
+    /* Navigation compacte */
+    .navbar a {
+        margin-left: 15px;
+        font-size: 16px;
     }
 
-    .btn-box a {
-        display: block;
-        width: 100%;
-        margin: 10px 0;
-        padding: 14px;
-        font-size: 1.1rem;
-    }
-
-    .home-sci {
+    /* Section home */
+    .home {
+        flex-direction: column;
+        padding: 0 5%;
+        height: auto; /* important : permet le scroll */
         margin-top: 20px;
     }
 
-    section {
-        margin-bottom: 40px;
+    .home-content {
+        max-width: 100%;
     }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    /* Boutons */
+    .home-content .btn-box {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-box a {
+        width: 100%;
+        height: 45px;
+    }
+
+    /* Icônes sociales */
+    .home-sci {
+        position: relative;
+        bottom: 0;
+        margin-top: 40px;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Images hover (désactivées sur mobile) */
+    .home-imgHover,
+    .home-imgHover2 {
+        display: none;
+    }
+
+    /* About page */
+    .home-content2 {
+        max-width: 100%;
+    }
+
+    .home-content2 h2 {
+        font-size: 32px;
+    }
+
+    /* Skills, contact, etc. */
+    .skills,
+    .contact-list {
+        font-size: 14px;
+    }
+
+    
 }
-/**/
+
+
