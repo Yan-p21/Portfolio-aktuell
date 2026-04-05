@@ -521,42 +521,4 @@ body {
 
 /*mobile version */
 
-/*index.html*/
-@media (max-width: 768px) {
-
-    body, .home-content {
-        padding: 20px;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
-    }
-
-    p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    .btn-box a {
-        display: block;
-        width: 100%;
-        margin: 10px 0;
-        padding: 14px;
-        font-size: 1.1rem;
-    }
-
-    .home-sci {
-        margin-top: 20px;
-    }
-
-    section {
-        margin-bottom: 40px;
-    }
-}
 /**/
